@@ -464,6 +464,10 @@ a {
   margin-bottom: 16px;
 }
 
+.social-links-header {
+  margin-bottom: 16px;
+}
+
 .footer .social-links {
   gap: 16px;
 }
