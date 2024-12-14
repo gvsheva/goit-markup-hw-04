@@ -2,6 +2,7 @@
   --dark-color: #2e2f42;
   --light-color: #f4f4fd;
   --accent-color: #e7e9fc;
+  --white-color: #ffffff;
   --primary-background-color: #4d5ae5;
   --primary-foreground-color: #ffffff;
   --pressed-background-color: #404bbf;
@@ -457,7 +458,20 @@ a {
   color: var(--light-color);
 }
 
-.footer .social-link-header {
+.footer .social-links-header {
   font-weight: 500;
-  color: var(--white-foreground-color);
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+
+.footer .social-links {
+  gap: 16px;
+}
+
+.footer .social-links .social-link:hover {
+  background-color: var(--success-background-color);
+}
+
+.footer .social-links .social-link:focus {
+  background-color: var(--success-background-color);
 }
