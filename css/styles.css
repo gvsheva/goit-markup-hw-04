@@ -17,6 +17,11 @@
   --success-foreground-color: #ffffff;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--white-background-color);
   font-family: Roboto, sans-serif;
@@ -151,6 +156,7 @@ a {
 
 .header .container {
   display: flex;
+  justify-content: space-between;
 }
 
 .header .navigation {
@@ -223,6 +229,7 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 
 .address a {
@@ -243,6 +250,7 @@ a {
 
 .hero {
   max-width: 1440px;
+  margin: 0 auto;
   background-color: var(--dark-background-color);
   color: var(--dark-foreground-color);
   text-align: center;
