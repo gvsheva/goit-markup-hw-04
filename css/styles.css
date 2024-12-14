@@ -107,6 +107,10 @@ a {
 .header {
   background-color: var(--white-background-color);
   border-bottom: 1px solid var(--accent-color);
+  box-shadow:
+    0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header .container {
@@ -144,7 +148,21 @@ a {
 
 .navigation .navigation-links a {
   padding: 24px 0;
-  color: var(--dark-color);
+  color: var(--pressed-background-color);
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation .navigation-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--pressed-background-color);
+  transition: width 0.3s;
 }
 
 .navigation .navigation-links a:hover {
@@ -165,6 +183,10 @@ a {
   display: flex;
   align-items: center;
   gap: 40px;
+}
+
+.address a {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address a:hover {
