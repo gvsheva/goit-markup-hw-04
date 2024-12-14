@@ -435,6 +435,15 @@ a {
   padding: 100px 0;
 }
 
+.footer .container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer .footer-main {
+  margin-right: 120px;
+}
+
 .footer .logo {
   display: inline-block;
   margin-bottom: 16px;
@@ -446,4 +455,9 @@ a {
 
 .footer .footer-text {
   color: var(--light-color);
+}
+
+.footer .social-link-header {
+  font-weight: 500;
+  color: var(--white-foreground-color);
 }
