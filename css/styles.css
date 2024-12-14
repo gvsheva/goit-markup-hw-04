@@ -464,13 +464,10 @@ a {
 
 .footer .social-links-header {
   font-weight: 500;
-  color: var(--white-color);
-  margin-bottom: 16px;
-}
-
-.social-links-header {
-  margin-bottom: 16px;
   font-size: 16px;
+  color: var(--white-color);
+  margin: 0;
+  margin-bottom: 16px;
 }
 
 .footer .social-links {
